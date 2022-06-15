@@ -32,7 +32,10 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and push
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v2
         with:
-          push: true
-          tags: ashokm7/rp:latest
+          context: .
+          push: false
+          tags: user/app:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
