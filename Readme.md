@@ -25,7 +25,9 @@ ashokm07/testalz
 
 Deployment: 
 
-IT can be either way deployed CD using deploy stage in codefresh to kubernetes cluster continuosly. In this assigment i used AWS as i dont have an existing cluster configured. 
+there is a straight forward deployment with integrating azure AKS with pipeline for every successful build. But due to some restriction with azure account im ubale to configure by that method.  Anyway i commented that steps for your reference in the pipeline configuration 
+
+It can be either way deployed CD using deploy stage in codefresh to kubernetes cluster continuosly. In this assigment i used AWS as i dont have an existing cluster configured. 
 
 I used AWS ECS fargate to deploy the container images using task definitions.
 
