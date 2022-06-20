@@ -31,3 +31,6 @@ It can be either way deployed CD using deploy stage in codefresh to kubernetes c
 
 I used AWS ECS fargate to deploy the container images using task definitions.
 
+
+Added execution log file 62afe2aa728822109e9c6c80.html for your reference. 
+
